@@ -8,14 +8,15 @@ const pageTitles = [
 ];
 
 const generateSummary = (array) => {
+  let pageCount = 0;
   array.forEach((item) => {
+    pageCount++;
     const itemLenght = item.length;
-    const itemIndex = array.indexOf(item);
-    const indexLenght = Number(itemIndex.toString().length);
+    const indexLenght = Number(pageCount.toString().length);
     const dotQuanty = 85 - (indexLenght + itemLenght);
     const dots = ".".repeat(dotQuanty);
-    console.log(`${item} ${dots} ${itemIndex}`);
+    console.log(`${item} ${dots} ${pageCount}`);
   });
-}
+};
 
 generateSummary(pageTitles);
