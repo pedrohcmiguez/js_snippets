@@ -1,4 +1,4 @@
-let pageTitles = [
+const pageTitles = [
   "Histórias",
   "Enredos",
   "Poesias",
